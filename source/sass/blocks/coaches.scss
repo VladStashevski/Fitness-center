@@ -1,0 +1,241 @@
+.coaches {
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.coaches__title {
+  font: 700 49px/120% $ff-bebasneue;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: -6px 0 43px 2px;
+  padding-right: 1010px;
+
+  @include vp-1199 {
+    margin-top: -3px;
+    margin-left: 0;
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 0;
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    margin-bottom: 39px;
+  }
+}
+
+.coaches__list {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  // gap: 40px;
+  width: 1160px;
+
+  @include vp-1279 {
+    width: 1060px;
+  }
+
+  @include vp-1199 {
+    width: 678px;
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    padding: 0 32px;
+  }
+}
+
+.coaches__swiper-button-prev,
+.coaches__swiper-button-next {
+  content: "";
+  background-color: $color-transparent;
+  background-image: url("../img/svg/arrow-left.svg");
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 16px;
+  height: 32px;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
+  }
+
+  &:focus {
+    outline: 3px solid $color-resolutionblue;
+    outline-offset: 5px;
+  }
+}
+
+.coaches__swiper-button-prev {
+  left: -57px;
+
+  @include vp-1279 {
+    left: -47px;
+  }
+
+  @include vp-1199 {
+    left: -1px;
+  }
+}
+
+.coaches__swiper-button-next {
+  background-image: url("../img/svg/arrow-right.svg");
+  right: -57px;
+
+  @include vp-1279 {
+    right: -47px;
+  }
+
+  @include vp-1199 {
+    right: -1px;
+  }
+}
+
+
+.coaches__card {
+  width: 260px;
+  height: 294px;
+  position: relative;
+
+  &:focus {
+    outline: 3px solid $color-torchred;
+  }
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__photo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  h3 {
+    font: 700 18px/120% $ff-robotocondensed;
+    color: $color-defaultwhite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  @include vp-1199 {
+    h3 {
+      left: 51%;
+    }
+  }
+}
+
+.coaches__info {
+  @include unselectable;
+
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-defaultwhite;
+  background-color: transparentize($color: $color-sapphire, $amount: 0.11);
+  // display: none;
+  transition: height $trans-default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  p:first-of-type {
+    font: 700 18px/150% $ff-robotocondensed;
+    text-align: center;
+    color: $color-defaultwhite;
+    margin: 51px 0 -3px;
+    padding: 0;
+  }
+
+  p + p {
+    font: 400 16px/150% $ff-robotocondensed;
+    color: $color-spindle;
+    text-align: center;
+    margin: 0 0 34px;
+    padding: 0;
+  }
+
+  @include vp-1199 {
+    p:first-of-type {
+      margin: 51px 0 -3px -7px;
+    }
+
+    p + p {
+      margin: 0 0 34px -7px;
+    }
+  }
+
+  @include vp-767 {
+    p:first-of-type {
+      margin: 42px 0 -3px;
+    }
+
+    p + p {
+      margin: 0 0 32px;
+    }
+  }
+}
+
+.coaches__skills {
+  padding: 0;
+  list-style-type: disc;
+  margin: 0 25px 20px 71px;
+
+  @include vp-767 {
+    margin: 0 25px 20px 50px;
+  }
+}
+
+.coaches__skill {
+  font: 400 14px/150% $ff-robotocondensed;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}

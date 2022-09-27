@@ -8,14 +8,68 @@
 //     url("../fonts/rouble.woff2") format("woff2"),
 //     url("../fonts/rouble.woff") format("woff");
 // }
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rouble";
+  font-display: swap;
+  src: local("Rouble"),
+    local("Rouble"),
+    url("../fonts/rouble.woff2") format("woff2"),
+    url("../fonts/rouble.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "Bebas Neue";
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+  src: local("Bebas Neue"),
+    local("Bebas Neue-regular"),
+    url("../fonts/bebasneueregular-400.woff2") format("woff2"),
+    url("../fonts/bebasneueregular-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  font-display: swap;
+  src: local("Bebas Neue"),
+    local("Bebas Neue-bold"),
+    url("../fonts/bebasneuebold-700.woff2") format("woff2"),
+    url("../fonts/bebasneuebold-700.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    local("Roboto Condensed-bold"),
+    url("../fonts/robotocondensedlight-300.woff2") format("woff2"),
+    url("../fonts/robotocondensedlight-300.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    local("Roboto Condensed-regular"),
+    url("../fonts/robotocondensedregular-400.woff2") format("woff2"),
+    url("../fonts/robotocondensedregular-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    local("Roboto Condensed-bold"),
+    url("../fonts/robotocondensedbold-700.woff2") format("woff2"),
+    url("../fonts/robotocondensedbold-700.woff") format("woff");
 }

@@ -2,3 +2,4 @@ build/*.js
 source/js/vendor/*.js
 gulpfile.js
 webpack.config.js
+mixins.scss

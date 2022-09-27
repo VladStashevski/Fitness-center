@@ -1,26 +1,34 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
+@import "vendor/masking-inputs";
 // Swiper 7.4.1
+@import "vendor/swiper";
 // @import "vendor/swiper";
-
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-
 // Blocks
 // ---------------------------------
-
-@import "blocks/btn";
+@import "blocks/button";
 @import "blocks/modal";
-
+@import "blocks/page-header.scss";
+@import "blocks/video.scss";
+@import "blocks/gym-hall.scss";
+@import "blocks/subscriptions.scss";
+@import "blocks/promo-event.scss";
+@import "blocks/coaches.scss";
+@import "blocks/advantages.scss";
+@import "blocks/offer.scss";
+@import "blocks/comments.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+@import "blocks/page-footer.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

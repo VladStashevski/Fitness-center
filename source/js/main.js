@@ -1,5 +1,9 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import {iosVhFix} from './utils/ios-vh-fix.js';
+import {initModals} from './modules/modals/init-modals.js';
+import {showCardCoaches} from './modules/show-card-coaches.js';
+import {switchSwiper} from './modules/swipers.js';
+import {toggleTab} from './modules/toggle-tab.js';
+import {findVideos} from './modules/find-videos.js';
 
 // ---------------------------------
 
@@ -9,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  findVideos();
 
   // Modules
   // ---------------------------------
@@ -16,6 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    switchSwiper();
+    showCardCoaches();
+    toggleTab();
     initModals();
   });
 });

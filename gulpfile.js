@@ -71,6 +71,8 @@ const copyImages = () => {
 
 const copy = () => {
   return gulp.src([
+    'source/*.webmanifest',
+    'source/favicon.ico',
     'source/**.html',
     'source/fonts/**',
     'source/img/**',
@@ -88,7 +90,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
