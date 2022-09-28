@@ -1,30 +1,30 @@
-export function findVideos() {
-  const videos = document.querySelectorAll('.video');
-
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
+export const findVideos = () => {
+  let video = document.querySelector('.video');
+  setupVideo(video);
+};
 
 function setupVideo(video) {
-  const link = video.querySelector('.video__link');
-  const button = video.querySelector('.video__button');
-  const id = parseMediaURL(link);
+  let link = video.querySelector('.video__link');
 
-  video.addEventListener('click', () => {
-    const iframe = createIframe(id);
+  video.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    let iframe = createIframe();
 
     link.remove();
-    button.remove();
     video.appendChild(iframe);
   });
 
   link.removeAttribute('href');
-  video.classList.add('video--enabled');
-}
 
-function parseMediaURL(link) {
-  return link.getAttribute('href').split('=').pop();
+  video.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Enter') {
+      evt.preventDefault();
+      let iframe = createIframe();
+
+      link.remove();
+      video.appendChild(iframe);
+    }
+  });
 }
 
 function createIframe(id) {
@@ -37,7 +37,8 @@ function createIframe(id) {
   return iframe;
 }
 
-function generateURL(id) {
-  const query = '?autoplay=1&enable_js=1';
-  return `https://youtube.com/embed/${ id }${query}`;
+function generateURL() {
+  let query = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
+
+  return query;
 }
