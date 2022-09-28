@@ -1,36 +1,37 @@
-const subscriptionsInfoElementsCollection = document.querySelector('.subscriptions__info').children;
-const subscriptionsTabElementsCollection = document.querySelector('.subscriptions__options').children;
-
-const hideAllSubscriptionsInfo = () => {
-  for (const element of subscriptionsInfoElementsCollection) {
-    element.style.display = 'none';
-  }
-};
-
-const deactivateAllSubscriptionsTabsState = () => {
-  for (const tab of subscriptionsTabElementsCollection) {
-    tab.classList.remove('is-active');
-  }
-};
-
-const setSubscriptionsTabs = () => {
-  for (const tab of subscriptionsTabElementsCollection) {
-    tab.querySelector('a').addEventListener('click', (evt) => {
-      evt.preventDefault();
-      deactivateAllSubscriptionsTabsState();
-      evt.target.parentNode.classList.add('is-active');
-      const macthingSubscriptionsInfoElement = document.getElementById(evt.target.href.split('#').pop());
-      hideAllSubscriptionsInfo();
-
-      macthingSubscriptionsInfoElement.style.display = 'grid';
-    });
-  }
-};
+/* eslint-disable no-invalid-this */
+/* eslint-disable no-shadow */
+let tab = document.querySelectorAll('.subscriptions__item');
+let content = document.querySelectorAll('.subscriptions__cards');
 
 export const toggleTab = () => {
-  hideAllSubscriptionsInfo();
+  tab.forEach(function (tab, i) {
+    tab.addEventListener('click', function () {
+      hideTab();
 
-  document.getElementById('1-month-subscriptions').style.display = 'grid';
-
-  setSubscriptionsTabs();
+      this.classList.add('subscriptions__item--current');
+      content[i].classList.add('subscriptions__cards--show');
+    });
+  });
 };
+
+function hideTab() {
+  tab.forEach((item) => {
+    item.classList.remove('subscriptions__item--current');
+  });
+  content.forEach((item) => {
+    item.classList.remove('subscriptions__cards--show');
+  });
+}
+
+const toggleKeyTab = () => {
+  tab.forEach(function (tab, i) {
+    tab.addEventListener('keydown', function (evt) {
+      if (evt.key === 'Enter') {
+        hideTab();
+        tab.classList.add('subscriptions__item--current');
+        content[i].classList.add('subscriptions__cards--show');
+      }
+    });
+  });
+};
+toggleKeyTab();
