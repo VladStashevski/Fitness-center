@@ -79,7 +79,6 @@
   min-width: 410px;
 
   form {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
@@ -223,5 +222,61 @@
     &:nth-child(2n) {
       margin-left: 0;
     }
+  }
+}
+
+.feedback__input-wrapper {
+  margin-left: -2px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+
+  @include vp-1199 {
+    margin-bottom: 29px;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
+    flex-direction: column;
+    row-gap: 31px;
+  }
+}
+
+.feedback__input-wrapper input {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 190px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-defaultwhite;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-lightslategrey;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-defaultwhite;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.feedback__button {
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+    background-color: $color-defaultwhite;
   }
 }

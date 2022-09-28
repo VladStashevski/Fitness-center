@@ -98,7 +98,6 @@
               <li tabindex="0" class="subscriptions__item">12 месяцев</li>
             </ul>
           </div>
-
           <div class="subscriptions__cards subscriptions__cards--show">
             <ul>
               <li>
@@ -121,7 +120,6 @@
               </li>
             </ul>
           </div>
-
           <div class="subscriptions__cards">
             <ul>
               <li>
@@ -144,7 +142,6 @@
               </li>
             </ul>
           </div>
-
           <div class="subscriptions__cards">
             <ul>
               <li>
@@ -561,9 +558,11 @@
             <section class="feedback__free-session">
               <h2 class="feedback__title feedback__title--free-session">БЕСПЛАТНОЕ занятие</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="feedback__input-wrapper">
                 <label><input type="text" name="name" placeholder="Имя" required></label>
                 <label><input class="masked" type="tel" name="tel" id="tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required></label>
-                <button class="button" type="submit">отправить</button>
+              </div>
+                <button class="button feedback__button" type="submit">отправить</button>
               </form>
             </section>
             <section class="feedback__info">
