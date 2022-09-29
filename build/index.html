@@ -166,25 +166,28 @@
           </div>
         </div>
       </section>
-      <!-- Supergames block -->
-        <section class="promo-event">
-          <div class="container">
-            <div class="promo-event__info">
-              <h2>SUPER <br>GAMES</h2>
-              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
-              <dl class="promo-event__date">
-                <dt>Дата</dt>
-                <dd><span>7</span>Марта<br> 2019</dd>
-              </dl>
-              <dl class="promo-event__time">
-                <dt>Время</dt>
-                <dd><span>12:00</span></dd>
-              </dl>
-              <a class="promo-event__button button" href="sitemap.html">заполнить заявку</a>
+      <!-- Promo-event block -->
+      <section class="promo-event">
+        <div class="promo-event__wrapper container">
+          <div class="promo-event__info">
+            <div class="promo-event__info-top">
+              <h2>Super Games</h2>
+              <div class="promo-event__date">
+                <p>Дата <time datetime="2019-03-07">7 <span>Марта<br> 2019</span></time></p>
+                <p>Время <time datetime="2019-03-07T12:00">12:00</time></p>
+              </div>
             </div>
-            <div class="promo-event__img"></div>
+            <div class="promo-event__info-bottom">
+              <strong>Ежегодные соревнования по CrossFit</strong>
+              <a href="#" class="promo-event__button button">Заполнить заявку</a>
+            </div>
           </div>
-        </section>
+          <picture>
+            <source type="image/webp" srcset="img/content/background/application-desk.webp 1x, img/content/background/application-desk.webp 2x">
+            <img src="img/content/background/application-desk.jpg" srcset="img/content/background/application-desk@2x.jpg 2x" width="660" height="500" alt="Фотография спортсмена">
+          </picture>
+        </div>
+      </section>
       <!-- Сoaches block -->
         <section class="coaches">
           <div class="container">
@@ -428,71 +431,92 @@
           </div>
         </section>
       <!-- Advantages block -->
-        <section class="advantages">
-          <div class="container">
-            <h2>наши преимущества</h2>
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <div class="advantages__key">900<span>кв/м</span></div>
-                <div class="advantages__description">
-                  <h2>Площадь</h2>
-                  <p>Занимайтесь без очередей<br> и&nbsp;толпучки</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__key">100<span>Тренажеров</span></div>
-                <div class="advantages__description">
-                  <p>Современные тренажеры<br> на&nbsp;все группы мышц</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__key">70<span>машин</span></div>
-                <div class="advantages__description">
-                  <h2>Собственная парковка</h2>
-                  <p>Вы&nbsp;всегда найдете место для<br> своей машины на&nbsp;нашей парковке</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__key">350<span>мест</span></div>
-                <div class="advantages__description">
-                  <h2>Комфорт</h2>
-                  <p>Просторные раздевалки,<br> душевые, фен, Wi-Fi, кулеры</p>
-                </div>
-              </li>
-              <li class="advantages__item">
-                <div class="advantages__key">5+<span>лет</span></div>
-                <div class="advantages__description">
-                  <h2>Тренерский опыт</h2>
-                  <p>Добивайтесь своих целей быстрее<br> с&nbsp;профессиональным тренером</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2>Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--area">
+              <div class="advantages__item-info">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+              </div>
+              <div class="advantages__item-figures">
+                <strong>900</strong>
+                <span>кв/м</span>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--parking">
+              <div class="advantages__item-info">
+                <h3>Собственная парковка</h3>
+                <p>Вы&nbsp;всегда найдете место для своей машины на нашей&nbsp;парковке</p>
+              </div>
+              <div class="advantages__item-figures">
+                <strong>70</strong>
+                <span>машин</span>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--middle">
+              <h3>100</h3>
+              <span>Тренажеров</span>
+              <p>Современные тренажеры на&nbsp;все группы мышц</p>
+            </li>
+            <li class="advantages__item advantages__item--comfort">
+              <div class="advantages__item-info">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+              <div class="advantages__item-figures"> <strong>350</strong> <span>мест</span>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--experience">
+              <div class="advantages__item-info">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+              </div>
+              <div class="advantages__item-figures"><strong>5+</strong><span>лет</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- Offer block -->
-        <section class="offer">
-          <div class="container">
-            <h2>акции</h2>
-            <ul class="offer__list">
-              <li class="offer__item offer__item--special">
-                <h2 class="offer__topic">Год</h2>
+      <section class="offer">
+        <div class="container">
+          <h2>Акции</h2>
+          <div class="offer__content-wrapper">
+            <div class="offer__main">
+              <div class="offer__main-info">
+                <h3>Год</h3>
                 <span>4999</span>
-                <p>Безлимитный абонемент<br> в&nbsp;тренажерный зал</p>
-                <a class="offer__link" href="sitemap.html">Подробнее</a>
-              </li>
-              <li class="offer__item">
-                <h2>Месяц бесплатно</h2>
-                <p>Приведи друга, получи<br> абонемент в&nbsp;подарок</p>
-                <a class="offer__link" href="sitemap.html">Подробнее</a>
-              </li>
-              <li class="offer__item">
-                <h2>Скидка 20%</h2>
-                <p>Корпоративный фитнес с&nbsp;командой</p>
-                <a class="offer__link" href="sitemap.html">Подробнее</a>
-              </li>
-            </ul>
+                <p>Безлимитный абонемент в тренажерный зал</p>
+                <a href="#" class="offer__main-button">Подробнее</a>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/content/background/promo-background-desk.webp 1x, img/content/background/promo-background-desk@2x.webp 2x">
+                <img src="img/content/background/promo-background-desk.jpg" srcset="img/content/background/promo-background-desk@2x.jpg 2x" width="280" height="462" alt="Фото девушки в спортивной форме синего цвета">
+              </picture>
+            </div>
+            <div class="offer__card offer__card--one">
+              <ul>
+                <li>
+                  <div class="offer__item-text">
+                    <h3>Месяц бесплатно</h3>
+                    <p>Приведи друга, получи абонемент в подарок</p>
+                  </div>
+                  <a href="#" class="offer__button">Подробнее</a>
+                </li>
+                <li>
+                  <div class="offer__item-text">
+                    <h3>Скидка 20%</h3>
+                    <p>Корпоративный фитнес с&nbsp;командой</p>
+                  </div>
+                  <a href="#" class="offer__button">Подробнее</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
       <!-- Сomments block -->
         <section class="comments">
           <div class="container">

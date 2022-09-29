@@ -28,6 +28,11 @@ $color-crimson:                    #d10a42;
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $border-gradient:                   linear-gradient(143deg, #d10a42, #00359f);
 $button-gradient:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$bg-cornflower-blue:                linear-gradient(#426ddd, #aecff2);
+$number-gradient:                   linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+$number-gradient2:                  linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+$number-gradient-mob:               linear-gradient(-377.51deg, #0041ca 39%, #d10a42 71.33%);
+$number-gradient-mob2:              linear-gradient(-377.51deg, #0041ca 53%, #d10a42 71.33%);
 // Typography
 // ---------------------------------
 // переменная используемая в html для подключения скейлинга
