@@ -144,6 +144,15 @@
   }
 }
 
+.page-footer__social-item svg:hover,
+.page-footer__social-item svg:focus {
+  fill-opacity: 0.6;
+}
+
+a:focus {
+  fill-opacity: 0.6;
+}
+
 .page-footer__social-item a {
   display: block;
   width: 25px;
