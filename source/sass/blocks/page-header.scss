@@ -8,6 +8,7 @@
     $color-darkcerulean 32.24deg,
     $color-venetianred 313.31deg,
     $color-darkcerulean 392.24deg);
+  background-color: $color-torchred;
 
   @include vp-1199 {
     min-height: 554px;
@@ -146,7 +147,7 @@
   }
 }
 
-h1 {
+.page-header__topic h1 {
   font: 700 110px/100% $ff-bebasneue;
   letter-spacing: 0.03em;
   color: $color-defaultwhite;

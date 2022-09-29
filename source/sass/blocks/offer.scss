@@ -14,7 +14,7 @@
   }
 }
 
-.offer__title {
+.offer h2 {
   font: 700 49px/120% $ff-bebasneue;
   letter-spacing: 0.03em;
   color: $color-sapphire;
@@ -96,11 +96,12 @@
   }
 }
 
-.offer__topic {
+.offer__list h2 {
   font: 700 26px/150% $ff-robotocondensed;
   color: $color-sapphire;
   margin: 0 0 3px;
   padding: 0;
+  letter-spacing: 0;
 }
 
 .offer__link {

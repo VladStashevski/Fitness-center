@@ -25,12 +25,10 @@
   }
 }
 
-.advantages__title {
+.advantages h2 {
   font: 700 49px/120% $ff-bebasneue;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  text-transform: uppercase;
-  text-align: center;
   margin: -3px 0 37px;
   padding: 0;
 
@@ -101,11 +99,12 @@
   }
 }
 
-.advantages__topic {
+.advantages__description h2 {
   font: 700 22px/150% $ff-robotocondensed;
   color: $color-sapphire;
   margin: 0 0 6px;
   padding: 0;
+  letter-spacing: 0;
 
   & + p {
     font: 400 16px/140% $ff-robotocondensed;

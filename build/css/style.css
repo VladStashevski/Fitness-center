@@ -1073,6 +1073,7 @@ button,
   padding-top: 30px;
   min-height: 658px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: #ed0233;
 }
 
 .page-header__introduction {
@@ -1132,7 +1133,7 @@ button,
   padding: 0;
 }
 
-h1 {
+.page-header__topic h1 {
   font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -1373,7 +1374,7 @@ h1 {
   padding: 0;
 }
 
-.gym-hall__title {
+.gym-hall__text h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   margin: 0;
@@ -1672,14 +1673,14 @@ h1 {
   font: 700 40px/150% "Roboto Condensed", "Arial", sans-serif;
 }
 
-.promo-event__title {
+.promo-event__info h2 {
   font: 700 90px/100% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   margin: 1px 0 3px;
   padding: 0;
 }
 
-.promo-event__title + p {
+.promo-event__info h2 + p {
   font: 400 18px/150% "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   margin: 0 0 47px;
@@ -1749,7 +1750,7 @@ h1 {
   display: flex;
 }
 
-.coaches__title {
+.coaches h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   color: #102654;
@@ -1926,12 +1927,10 @@ h1 {
   display: flex;
 }
 
-.advantages__title {
+.advantages h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   color: #102654;
-  text-transform: uppercase;
-  text-align: center;
   margin: -3px 0 37px;
   padding: 0;
 }
@@ -1976,14 +1975,15 @@ h1 {
   left: 0;
 }
 
-.advantages__topic {
+.advantages__description h2 {
   font: 700 22px/150% "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   margin: 0 0 6px;
   padding: 0;
+  letter-spacing: 0;
 }
 
-.advantages__topic + p {
+.advantages__description h2 + p {
   font: 400 16px/140% "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   margin: 0;
@@ -2106,7 +2106,7 @@ h1 {
   padding-top: 120px;
 }
 
-.offer__title {
+.offer h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   color: #102654;
@@ -2157,11 +2157,12 @@ h1 {
   display: none;
 }
 
-.offer__topic {
+.offer__list h2 {
   font: 700 26px/150% "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   margin: 0 0 3px;
   padding: 0;
+  letter-spacing: 0;
 }
 
 .offer__link {
@@ -2250,7 +2251,7 @@ h1 {
   padding-bottom: 120px;
 }
 
-.comments__title {
+.comments h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   color: #102654;
@@ -2410,16 +2411,16 @@ h1 {
   background-color: #74819c;
 }
 
-.feedback__topic {
+.feedback__item h2 {
   margin: 0 0 2px;
   padding: 0;
   font: 700 16px/150% "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
 }
 
-.feedback__topic + p,
-.feedback__topic + a,
-.feedback__topic + address {
+.feedback__item h2 + p,
+.feedback__item h2 + a,
+.feedback__item h2 + address {
   margin: 0;
   padding: 0;
   font: 400 14px/152.3% "Roboto Condensed", "Arial", sans-serif;
@@ -2568,26 +2569,7 @@ h1 {
 }
 
 .page-footer__social-item a {
-  vertical-align: middle;
-}
-
-.page-footer__social-item--vk,
-.page-footer__social-item--vk a,
-.page-footer__social-item--vk svg {
-  width: 25px;
-  height: 25px;
-}
-
-.page-footer__social-item--ok,
-.page-footer__social-item--ok a,
-.page-footer__social-item--ok svg {
-  width: 25px;
-  height: 25px;
-}
-
-.page-footer__social-item--reddit,
-.page-footer__social-item--reddit a,
-.page-footer__social-item--reddit svg {
+  display: block;
   width: 25px;
   height: 25px;
 }
@@ -2686,15 +2668,6 @@ h1 {
   .page-footer__link:focus {
     opacity: 0.7;
   }
-
-  .page-footer__social-item a:hover,
-  .page-footer__social-item a:focus {
-    opacity: 0.7;
-  }
-
-  .page-footer__social-item a:focus {
-    opacity: 0.7;
-  }
 }
 
 @media (max-width: 1279px) {
@@ -2751,7 +2724,7 @@ h1 {
     margin-bottom: 4px;
   }
 
-  h1 {
+  .page-header__topic h1 {
     font-size: 86px;
     margin-bottom: 36px;
   }
@@ -2847,7 +2820,7 @@ h1 {
     display: none;
   }
 
-  .gym-hall__title {
+  .gym-hall__text h2 {
     margin-top: -3px;
     font-size: 42px;
   }
@@ -2947,12 +2920,12 @@ h1 {
     font-size: 24px;
   }
 
-  .promo-event__title {
+  .promo-event__info h2 {
     font-size: 52px;
     margin: 0 0 -3px;
   }
 
-  .promo-event__title + p {
+  .promo-event__info h2 + p {
     font-size: 12px;
     margin-bottom: 31px;
   }
@@ -2999,7 +2972,7 @@ h1 {
     padding-bottom: 100px;
   }
 
-  .coaches__title {
+  .coaches h2 {
     margin-top: -3px;
     margin-left: 0;
     margin-bottom: 35px;
@@ -3042,7 +3015,7 @@ h1 {
     padding-top: 100px;
   }
 
-  .advantages__title {
+  .advantages h2 {
     margin-bottom: 25px;
     font-size: 42px;
   }
@@ -3065,7 +3038,7 @@ h1 {
     bottom: -2px;
   }
 
-  .advantages__topic {
+  .advantages__description h2 {
     font-size: 20px;
     margin: 0 0 2px;
   }
@@ -3164,7 +3137,7 @@ h1 {
     padding-top: 100px;
   }
 
-  .offer__title {
+  .offer h2 {
     margin-bottom: 35px;
     font-size: 42px;
     margin-top: -3px;
@@ -3197,7 +3170,7 @@ h1 {
     padding-bottom: 100px;
   }
 
-  .comments__title {
+  .comments h2 {
     font-size: 42px;
     margin: -3px 0 34px;
   }
@@ -3270,14 +3243,14 @@ h1 {
     height: 80%;
   }
 
-  .feedback__topic {
+  .feedback__item h2 {
     font-size: 20px;
     margin: 0 0 6px;
   }
 
-  .feedback__topic + p,
-  .feedback__topic + a,
-  .feedback__topic + address {
+  .feedback__item h2 + p,
+  .feedback__item h2 + a,
+  .feedback__item h2 + address {
     font-size: 18px;
   }
 
@@ -3393,7 +3366,7 @@ h1 {
     margin-bottom: 9px;
   }
 
-  h1 {
+  .page-header__topic h1 {
     font-size: 78px;
     margin-bottom: 37px;
   }
@@ -3442,7 +3415,7 @@ h1 {
     text-align: left;
   }
 
-  .gym-hall__title {
+  .gym-hall__text h2 {
     font-size: 32px;
   }
 
@@ -3563,7 +3536,7 @@ h1 {
     padding-bottom: 70px;
   }
 
-  .coaches__title {
+  .coaches h2 {
     font-size: 32px;
     margin-bottom: 39px;
   }
@@ -3607,7 +3580,7 @@ h1 {
     padding: 0;
   }
 
-  .advantages__title {
+  .advantages h2 {
     margin: -3px auto 25px;
     padding: 0 15px;
     font-size: 32px;
@@ -3764,7 +3737,7 @@ h1 {
     padding-bottom: 40px;
   }
 
-  .offer__title {
+  .offer h2 {
     margin-bottom: 38px;
     font-size: 32px;
   }
@@ -3825,7 +3798,7 @@ h1 {
     padding-bottom: 70px;
   }
 
-  .comments__title {
+  .comments h2 {
     font-size: 32px;
     margin-bottom: 39px;
   }
@@ -3923,9 +3896,9 @@ h1 {
     display: none;
   }
 
-  .feedback__topic + p,
-  .feedback__topic + a,
-  .feedback__topic + address {
+  .feedback__item h2 + p,
+  .feedback__item h2 + a,
+  .feedback__item h2 + address {
     text-align: left;
   }
 
@@ -3976,6 +3949,7 @@ h1 {
 
   .page-footer__link {
     display: inline-block;
+    vertical-align: middle;
     width: 145px;
     font-size: 16px;
   }
@@ -3993,27 +3967,6 @@ h1 {
     margin-left: 0;
     gap: 10px;
     margin-top: 18px;
-  }
-
-  .page-footer__social-item--vk,
-  .page-footer__social-item--vk a,
-  .page-footer__social-item--vk svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .page-footer__social-item--ok,
-  .page-footer__social-item--ok a,
-  .page-footer__social-item--ok svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .page-footer__social-item--reddit,
-  .page-footer__social-item--reddit a,
-  .page-footer__social-item--reddit svg {
-    width: 25px;
-    height: 25px;
   }
 }
 
