@@ -1139,7 +1139,7 @@ button,
   color: #ffffff;
   text-shadow: 2px 0 2px #ffffff;
   text-align: right;
-  margin: 0 0 50px 0;
+  margin: 0 0 55px 0;
   padding: 0;
 }
 
@@ -1371,7 +1371,7 @@ button,
 .subscriptions {
   position: relative;
   padding-top: 118px;
-  padding-bottom: 104px;
+  padding-bottom: 120px;
   background-color: #f8f9fc;
   text-align: center;
   color: #102654;
@@ -1382,7 +1382,7 @@ button,
   display: block;
   position: absolute;
   bottom: -95px;
-  right: -112px;
+  right: -107px;
   width: 321px;
   height: 384px;
   -webkit-transform: rotate(-30deg);
@@ -1579,7 +1579,7 @@ button,
 
 .promo-event {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 123px;
 }
 
 .promo-event__wrapper {
@@ -2066,7 +2066,7 @@ button,
 
 .offer {
   padding-top: 118px;
-  padding-bottom: 60px;
+  padding-bottom: 119px;
 }
 
 .offer h2 {
