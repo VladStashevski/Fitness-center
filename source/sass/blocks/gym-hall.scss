@@ -114,7 +114,7 @@
 
 .gym-hall__img {
   background-color: $color-lightslategrey;
-  background-image: url("../img/content/background/gymhall-background-desk.jpg");
+  background-image: url("../img/content/background/gymhall-background-desk.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -122,26 +122,26 @@
   height: 401px;
 
   @include retina {
-    background-image: url("../img/content/background/gymhall-background-desk@2x.jpg");
+    background-image: url("../img/content/background/gymhall-background-desk@2x.webp");
   }
 
   @include vp-1199 {
     margin-left: 0;
     width: 100%;
     height: 345px;
-    background-image: url("../img/content/background/gymhall-background-tab.jpg");
+    background-image: url("../img/content/background/gymhall-background-tab.webp");
 
     @include retina {
-      background-image: url("../img/content/background/gymhall-background-tab@2x.jpg");
+      background-image: url("../img/content/background/gymhall-background-tab@2x.webp");
     }
   }
 
   @include vp-767 {
     height: 313px;
-    background-image: url("../img/content/background/gymhall-background-mob.jpg");
+    background-image: url("../img/content/background/gymhall-background-mob.webp");
 
     @include retina {
-      background-image: url("../img/content/background/gymhall-background-mob@2x.jpg");
+      background-image: url("../img/content/background/gymhall-background-mob@2x.webp");
     }
   }
 }

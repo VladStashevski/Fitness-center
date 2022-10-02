@@ -17,22 +17,22 @@
     transform: rotate(-30deg);
 
     background-color: $color-transparent;
-    background-image: url("../img/content/details/red-discs-desk.png");
+    background-image: url("../img/content/details/red-discs-desk.webp");
     background-repeat: no-repeat;
     background-size: 321px 384px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/content/details/red-discs-desk@2x.png");
+      background-image: url("../img/content/details/red-discs-desk@2x.webp");
     }
 
     @include vp-1199 {
       background-size: 289px 345px;
       bottom: -103px;
       right: -49px;
-      background-image: url("../img/content/details/red-discs-tab.png");
+      background-image: url("../img/content/details/red-discs-tab.webp");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/content/details/red-discs-tab@2x.png");
+        background-image: url("../img/content/details/red-discs-tab@2x.webp");
       }
     }
 
