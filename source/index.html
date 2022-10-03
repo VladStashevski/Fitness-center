@@ -76,7 +76,7 @@
             <div class="gym-hall__views">
               <div class="gym-hall__img"></div>
               <div class="gym-hall__video video">
-                <a class="video__link" href="#" target="_blank">
+                <a class="video__link" tabindex="0" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank">
                   <picture>
                     <!-- 1x: 364px, 2x: 728px -->
                     <source type="image/webp" srcset="img/content/background/preview-video-desk.webp 1x, img/content/background/preview-video-desk@2x.webp 2x">
@@ -431,91 +431,93 @@
           </div>
         </section>
       <!-- Advantages block -->
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2>Наши преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--area">
-              <div class="advantages__item-info">
-                <h3>Площадь</h3>
-                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
-              </div>
-              <div class="advantages__item-figures">
-                <strong>900</strong>
-                <span>кв/м</span>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--parking">
-              <div class="advantages__item-info">
-                <h3>Собственная парковка</h3>
-                <p>Вы&nbsp;всегда найдете место для своей машины на нашей&nbsp;парковке</p>
-              </div>
-              <div class="advantages__item-figures">
-                <strong>70</strong>
-                <span>машин</span>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--middle">
-              <h3>100</h3>
-              <span>Тренажеров</span>
-              <p>Современные тренажеры на&nbsp;все группы мышц</p>
-            </li>
-            <li class="advantages__item advantages__item--comfort">
-              <div class="advantages__item-info">
-                <h3>Комфорт</h3>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-              </div>
-              <div class="advantages__item-figures"> <strong>350</strong> <span>мест</span>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--experience">
-              <div class="advantages__item-info">
-                <h3>Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
-              </div>
-              <div class="advantages__item-figures"><strong>5+</strong><span>лет</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <section class="container advantages">
+        <h2>Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--left">
+            <dl>
+              <dt>900</dt>
+              <dd>кв/м</dd>
+            </dl>
+            <div class="advantages__text">
+              <p>Площадь</p>
+              <p>Занимайтесь&#160;без&#160;очередей и&#160;толпучки</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <dl>
+              <dt>70</dt>
+              <dd>машин</dd>
+            </dl>
+            <div class="advantages__text">
+              <p>Собственная парковка</p>
+              <p>Вы всегда найдете место для своей&#160;машины на нашей парковке</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--major">
+            <dl>
+              <dt>100</dt>
+              <dd>Тренажеров</dd>
+            </dl>
+            <p>Современные тренажеры на&#160;все&#160;группы мышц</p>
+          </li>
+          <li class="advantages__item advantages__item--bottom advantages__item--left">
+            <dl>
+              <dt>350</dt>
+              <dd>мест</dd>
+            </dl>
+            <div class="advantages__text">
+              <p>Комфорт</p>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--bottom">
+            <dl>
+              <dt>5+</dt>
+              <dd>лет</dd>
+            </dl>
+            <div class="advantages__text">
+              <p>Тренерский опыт</p>
+              <p>Добивайтесь своих целей быстрее с&#160;профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
       </section>
       <!-- Offer block -->
-      <section class="offer">
-        <div class="container">
-          <h2>Акции</h2>
-          <div class="offer__content-wrapper">
-            <div class="offer__main">
-              <div class="offer__main-info">
-                <h3>Год</h3>
+      <section class="container offer" id="offer">
+        <h2>Акции</h2>
+        <ul class="offer__list">
+          <li class="offer__item offer__item--main">
+            <div class="offer__content">
+              <p>Год
                 <span>4999</span>
-                <p>Безлимитный абонемент в тренажерный зал</p>
-                <a href="#" class="offer__main-button">Подробнее</a>
-              </div>
+              </p>
+              <p>Безлимитный абонемент в&#160;тренажерный&#160;зал</p>
+              <a href="#" aria-label="Перейти к покупке абонимента по акции.">подробнее</a>
+            </div>
+            <div class="offer__img">
+              <!-- 1х: 280px; 2x: 560px -->
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/background/promo-background-mob.webp 1x, img/content/background/promo-background-mob@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/background/promo-background-tab.webp 1x, img/content/background/promo-background-tab@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/background/promo-background-desk.webp 1x, img/content/background/promo-background-desk@2x.webp 2x">
-                <img src="img/content/background/promo-background-desk.jpg" srcset="img/content/background/promo-background-desk@2x.jpg 2x" width="280" height="462" alt="Фото девушки в спортивной форме синего цвета">
+                <source media="(max-width: 767px)" srcset="img/content/background/promo-background-mob.jpg 1x, img/content/background/promo-background-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/content/background/promo-background-tab.jpg 1x, img/content/background/promo-background-tab@2x.jpg 2x">
+                <img src="img/content/background/promo-background-desk.jpg" srcset="img/content/background/promo-background-desk@2x.jpg 2x" width="280" height="462" alt="Красивая девушка в легинсах.">
               </picture>
             </div>
-            <div class="offer__card offer__card--one">
-              <ul>
-                <li>
-                  <div class="offer__item-text">
-                    <h3>Месяц бесплатно</h3>
-                    <p>Приведи друга, получи абонемент в подарок</p>
-                  </div>
-                  <a href="#" class="offer__button">Подробнее</a>
-                </li>
-                <li>
-                  <div class="offer__item-text">
-                    <h3>Скидка 20%</h3>
-                    <p>Корпоративный фитнес с&nbsp;командой</p>
-                  </div>
-                  <a href="#" class="offer__button">Подробнее</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="offer__item">
+            <p>Месяц бесплатно</p>
+            <p>Приведи друга, получи абонемент&#160;в&#160;подарок</p>
+            <a href="#" aria-label="Перейти на страницу условий акции.">подробнее</a>
+          </li>
+          <li class="offer__item">
+            <p>Скидка 20%</p>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#" aria-label="Перейти на страницу условий акции.">подробнее</a>
+          </li>
+        </ul>
       </section>
       <!-- Сomments block -->
         <section class="comments">

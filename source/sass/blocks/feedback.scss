@@ -84,7 +84,7 @@
   }
 
   @include vp-1199 {
-    padding: 70px 162px 68px 133px;
+    padding: 70px 162px 65px 133px;
     min-width: auto;
     background-color: $color-sapphire;
 
@@ -248,7 +248,7 @@
 .feedback__input-wrapper input {
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 190px;
+  width: 205px;
   font-size: 14px;
   line-height: 16px;
   color: $color-defaultwhite;
@@ -260,10 +260,6 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-defaultwhite;
-  }
-
-  @include vp-1199 {
-    width: 100%;
   }
 }
 
