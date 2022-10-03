@@ -21,10 +21,6 @@
     background-repeat: no-repeat;
     background-size: 321px 384px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/content/details/red-discs-desk@2x.webp");
-    }
-
     @include vp-1199 {
       background-size: 289px 345px;
       bottom: -103px;
