@@ -2423,7 +2423,7 @@ button,
 .feedback__input-wrapper input {
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 205px;
+  width: 190px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -3188,9 +3188,13 @@ a:focus {
     column-gap: 60px;
   }
 
+  .feedback__input-wrapper input {
+    width: 207px;
+  }
+
   .page-footer {
     padding-top: 45px;
-    padding-bottom: 49px;
+    padding-bottom: 40px;
     min-height: 114px;
   }
 
@@ -3322,6 +3326,7 @@ a:focus {
 
   .gym-hall__text p:not(:first-of-type) {
     text-align: left;
+    padding-right: 27px;
   }
 
   .gym-hall__text h2 {
@@ -3426,8 +3431,8 @@ a:focus {
   }
 
   .promo-event {
-    padding-top: 70px;
-    padding-bottom: 35px;
+    padding-top: 83px;
+    padding-bottom: 70px;
   }
 
   .promo-event__wrapper {
@@ -3441,10 +3446,6 @@ a:focus {
 
   .promo-event__info h2 {
     width: auto;
-  }
-
-  .coaches {
-    padding-bottom: 70px;
   }
 
   .coaches h2 {
@@ -3537,7 +3538,7 @@ a:focus {
   }
 
   .advantages__item--major dl {
-    margin-bottom: 11px;
+    margin-bottom: 15px;
   }
 
   .advantages__item--major dt {
@@ -3589,7 +3590,7 @@ a:focus {
 
   .offer__content {
     width: 100%;
-    padding: 45px 50px;
+    padding: 44px 50px;
     text-align: center;
   }
 
@@ -3680,7 +3681,7 @@ a:focus {
   }
 
   .feedback__free-session {
-    padding: 70px 15px 69px;
+    padding: 66px 15px 69px;
   }
 
   .feedback__free-session form {
@@ -3730,6 +3731,10 @@ a:focus {
     -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 31px;
+  }
+
+  .feedback__input-wrapper input {
+    width: 100%;
   }
 
   .page-footer .container {
