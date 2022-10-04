@@ -1,37 +1,20 @@
-const commentsSwiperPrevSlideButton = document.querySelector('.comments__swiper-button-prev');
-const commentsSwiperNextSlideButton = document.querySelector('.comments__swiper-button-next');
-const coachesSwiperPrevSlideButton = document.querySelector('.coaches__swiper-button-prev');
-const coachesSwiperNextSlideButton = document.querySelector('.coaches__swiper-button-next');
-
-const initСommentsSwiper = () => {
-  commentsSwiperPrevSlideButton.style.display = 'block';
-  commentsSwiperNextSlideButton.style.display = 'block';
-
+/* eslint-disable no-unused-vars */
+export const switchSwiperReviews = () => {
   // eslint-disable-next-line no-undef
-  const commentsSwiper = new Swiper('.comments__list .swiper', {
+  const mySwiper = new Swiper('.swiper2', {
+    slidesPerView: 1,
     spaceBetween: 20,
-  });
+    slidersPerGroup: 1,
 
-  commentsSwiperPrevSlideButton.addEventListener('click', () => {
-    commentsSwiper.slidePrev();
-  });
-
-  commentsSwiperNextSlideButton.addEventListener('click', () => {
-    commentsSwiper.slideNext();
-  });
-
-  commentsSwiperPrevSlideButton.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 13) {
-      commentsSwiper.slidePrev();
-    }
-  });
-
-  commentsSwiperNextSlideButton.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 13) {
-      commentsSwiper.slideNext();
-    }
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
   });
 };
+
+const coachesSwiperPrevSlideButton = document.querySelector('.coaches__swiper-button-prev');
+const coachesSwiperNextSlideButton = document.querySelector('.coaches__swiper-button-next');
 
 const initCoachesSwiper = () => {
   coachesSwiperPrevSlideButton.style.display = 'block';
@@ -77,6 +60,5 @@ const initCoachesSwiper = () => {
 };
 
 export const switchSwiper = () => {
-  initСommentsSwiper();
   initCoachesSwiper();
 };
