@@ -31,10 +31,10 @@ h1 {
   margin: 0 0 50px 0;
   padding: 0;
 
-  font: 700 110px/100% $ff-bebas-neue;
+  font: 700 110px/100% $ff-bebasneue;
   letter-spacing: 0.03em;
-  color: $color-default-white;
-  text-shadow: 2px 0 2px $color-default-white;
+  color: $color-defaultwhite;
+  text-shadow: 2px 0 2px $color-defaultwhite;
   text-align: right;
 
   @include vp-1199 {
