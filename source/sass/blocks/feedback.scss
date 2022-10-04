@@ -8,22 +8,22 @@
       $color-sapphire 0% 50%,
       $color-defaultwhite 50% 100%);
 
-  .container {
-    justify-content: space-between;
-    display: flex;
-  }
-
   @include vp-1199 {
     padding-bottom: 0;
     min-height: none;
     background: $color-defaultwhite;
     padding-top: 0;
+  }
+}
 
-    .container {
-      padding: 0;
-      margin: 0;
-      flex-direction: column;
-    }
+.feedback__wrapper {
+  justify-content: space-between;
+  display: flex;
+
+  @include vp-1199 {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
   }
 }
 

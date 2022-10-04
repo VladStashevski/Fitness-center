@@ -1702,7 +1702,7 @@ button,
   background-color: #ffffff;
 }
 
-.coaches .container {
+.coaches__wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2313,7 +2313,7 @@ button,
   background: linear-gradient(to right, #102654 0% 50%, #ffffff 50% 100%);
 }
 
-.feedback .container {
+.feedback__wrapper {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -3111,7 +3111,7 @@ a:focus {
     padding-top: 0;
   }
 
-  .feedback .container {
+  .feedback__wrapper {
     padding: 0;
     margin: 0;
     -webkit-box-orient: vertical;
@@ -3801,9 +3801,5 @@ a:focus {
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .gym-hall__img {
     background-image: url("../img/content/background/gymhall-background-desk@2x.webp");
-  }
-
-  .subscriptions::after {
-    background-image: url("../img/content/details/red-discs-desk@2x.webp");
   }
 }

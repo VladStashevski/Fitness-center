@@ -27,6 +27,27 @@ html {
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 }
 
+h1 {
+  margin: 0 0 50px 0;
+  padding: 0;
+
+  font: 700 110px/100% $ff-bebas-neue;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  text-shadow: 2px 0 2px $color-default-white;
+  text-align: right;
+
+  @include vp-1199 {
+    font-size: 86px;
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    font-size: 78px;
+    margin-bottom: 37px;
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
