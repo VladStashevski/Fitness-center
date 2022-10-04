@@ -1157,16 +1157,6 @@ button,
   left: 0;
 }
 
-h1 {
-  margin: 0 0 50px 0;
-  padding: 0;
-  font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-shadow: 2px 0 2px #ffffff;
-  text-align: right;
-}
-
 .page-header__button {
   width: 234px;
   margin-bottom: 43px;
@@ -1406,7 +1396,7 @@ h1 {
 
 .subscriptions h2 {
   margin: 0 0 35px;
-  font: 700 26px/110.2% "Roboto Condensed", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -1712,7 +1702,7 @@ h1 {
   background-color: #ffffff;
 }
 
-.coaches__wrapper {
+.coaches .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2058,7 +2048,6 @@ h1 {
   margin-top: 0;
   margin-bottom: 55px;
   font-family: "Bebas Neue", "Arial", sans-serif;
-  font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2324,7 +2313,7 @@ h1 {
   background: linear-gradient(to right, #102654 0% 50%, #ffffff 50% 100%);
 }
 
-.feedback__wrapper {
+.feedback .container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2699,11 +2688,6 @@ a:focus {
   .page-header__properties {
     top: 46.3%;
     left: -90px;
-  }
-
-  h1 {
-    font-size: 86px;
-    margin-bottom: 36px;
   }
 
   .page-header__button {
@@ -3127,7 +3111,7 @@ a:focus {
     padding-top: 0;
   }
 
-  .feedback__wrapper {
+  .feedback .container {
     padding: 0;
     margin: 0;
     -webkit-box-orient: vertical;
@@ -3306,12 +3290,6 @@ a:focus {
     right: 177px;
   }
 
-  h1 {
-    font-size: 78px;
-    margin-bottom: 37px;
-    font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
-  }
-
   .page-header__button {
     width: 100%;
     margin-bottom: 0;
@@ -3389,7 +3367,6 @@ a:focus {
     margin-bottom: 23px;
     font-size: 32px;
     line-height: 32px;
-    font: 700 26px/110.2% "Roboto Condensed", "Arial", sans-serif;
   }
 
   .subscriptions__tabs ul {
