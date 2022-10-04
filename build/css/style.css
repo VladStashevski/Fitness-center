@@ -1406,7 +1406,7 @@ h1 {
 
 .subscriptions h2 {
   margin: 0 0 35px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font: 700 26px/110.2% "Roboto Condensed", "Arial", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 49px;
@@ -3309,6 +3309,7 @@ a:focus {
   h1 {
     font-size: 78px;
     margin-bottom: 37px;
+    font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
   }
 
   .page-header__button {
@@ -3388,6 +3389,7 @@ a:focus {
     margin-bottom: 23px;
     font-size: 32px;
     line-height: 32px;
+    font: 700 26px/110.2% "Roboto Condensed", "Arial", sans-serif;
   }
 
   .subscriptions__tabs ul {
