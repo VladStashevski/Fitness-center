@@ -1136,6 +1136,7 @@ button,
 .page-header__topic h1 {
   font: 700 110px/100% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
+  font-weight: 700;
   color: #ffffff;
   text-shadow: 2px 0 2px #ffffff;
   text-align: right;
@@ -1341,6 +1342,7 @@ button,
 .gym-hall__text h2 {
   font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
