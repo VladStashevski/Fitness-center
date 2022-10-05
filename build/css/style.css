@@ -2470,7 +2470,7 @@ h1 {
 .subscriptions {
   position: relative;
   padding-top: 118px;
-  padding-bottom: 120px;
+  padding-bottom: 105px;
   background-color: #f8f9fc;
   text-align: center;
   color: #102654;
@@ -3616,7 +3616,6 @@ h1 {
 }
 
 .page-footer {
-  padding-bottom: 37px;
   min-height: 108px;
   background-color: #030a1a;
   padding-top: 40px;
@@ -3676,6 +3675,7 @@ h1 {
   gap: 12px;
   margin-left: 40px;
   padding: 0;
+  margin-top: 3px;
 }
 
 .page-footer__social-item svg:hover,

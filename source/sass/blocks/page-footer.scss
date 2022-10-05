@@ -1,5 +1,4 @@
 .page-footer {
-  padding-bottom: 37px;
   min-height: 108px;
   background-color: $color-blackrussian;
   padding-top: 40px;
@@ -130,6 +129,7 @@
   gap: 12px;
   margin-left: 40px;
   padding: 0;
+  margin-top: 3px;
 
   @include vp-1199 {
     margin-left: 52px;
