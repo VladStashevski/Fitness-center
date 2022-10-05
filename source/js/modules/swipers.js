@@ -1,17 +1,20 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-export const switchSwiperReviews = () => {
-  // eslint-disable-next-line no-undef
-  const mySwiper = new Swiper('.swiper2', {
+export const createFeedbackSwiper = () => {
+  document.querySelector('.reviews__wrapper').setAttribute('data-is-active', '');
+  const swiperFeedback = new Swiper('.reviews__slider', {
     slidesPerView: 1,
-    spaceBetween: 20,
-    slidersPerGroup: 1,
-
+    spaceBetween: 0,
+    loop: false,
+    loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.swiper-button-next2',
-      prevEl: '.swiper-button-prev2',
+      nextEl: '.reviews__btn-next',
+      prevEl: '.reviews__btn-prev',
     },
   });
+  return (swiperFeedback);
 };
+
 
 const coachesSwiperPrevSlideButton = document.querySelector('.coaches__swiper-button-prev');
 const coachesSwiperNextSlideButton = document.querySelector('.coaches__swiper-button-next');

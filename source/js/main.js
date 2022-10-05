@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix.js';
 import {initModals} from './modules/modals/init-modals.js';
 import {showCardCoaches} from './modules/show-card-coaches.js';
-import {switchSwiperReviews, switchSwiper} from './modules/swipers.js';
+import {createFeedbackSwiper, switchSwiper} from './modules/swipers.js';
 import {toggleTab} from './modules/toggle-tab.js';
 import {findVideos} from './modules/find-videos.js';
 
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     switchSwiper();
-    switchSwiperReviews();
+    createFeedbackSwiper();
     showCardCoaches();
     toggleTab();
     initModals();

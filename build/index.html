@@ -440,7 +440,7 @@
         </section>
       <!-- Advantages block -->
       <section class="advantages">
-        <div class="container">
+        <div class="advantages__wrapper">
         <h2>Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--left">
@@ -547,77 +547,67 @@
       </section>
       <!-- Сomments block -->
       <section class="reviews">
-        <div class="container">
-          <h2>Отзывы</h2>
-          <div class="reviews__wrapper-inner">
-            <button type="button" class="swiper-button-prev2 reviews__button reviews__button--prev"></button>
-            <button type="button" class="swiper-button-next2 reviews__button reviews__button--next"></button>
-            <div class="swiper2 reviews__swiper">
-              <ul class="swiper-wrapper reviews__wrapper-swiper reviews__wrapper-swiper--nojs">
-                <li class="swiper-slide reviews__slide reviews__slide--active">
-                  <blockquote>
-                    <h4>Анна Орлова</h4>
-                    <picture>
-                      <!-- 1x: 68x68px; 2x: 136x136px -->
-                      <source media="(max-width: 767px)"srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x"type="image/webp">
-                      <source media="(max-width: 767px)"srcset="img/content/details/user-desk.png 1x, img/content/details/user-desk@2x.png 2x">
-                      <!-- 1x: 80x80px; 2x: 160x160px -->
-                      <source media="(min-width: 1200px)"srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x" type="image/webp">
-                      <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png" width="80" height="80"
-                        alt="Фото пользователя">
-                    </picture>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                      обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-                    </p>
-                  </blockquote>
-                </li>
-                <li class="swiper-slide reviews__slide">
-                  <blockquote>
-                    <h4>Анна Орлова 2</h4>
-                    <picture>
-                      <!-- 1x: 68x68px; 2x: 136x136px -->
-                      <source media="(max-width: 767px)"
-                        srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(max-width: 767px)"
-                        srcset="img/content/details/user-desk.png 1x, img/content/details/user-desk@2x.png 2x">
-
-                      <!-- 1x: 80x80px; 2x: 160x160px -->
-                      <source media="(min-width: 1200px)"
-                        srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x" type="image/webp">
-                      <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png" width="80" height="80"
-                        alt="Фото пользователя">
-                    </picture>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                      обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-                    </p>
-                  </blockquote>
-                </li>
-                <li class="swiper-slide reviews__slide">
-                  <blockquote>
-                    <h4>Анна Орлова 3</h4>
-                    <picture>
-                      <!-- 1x: 68x68px; 2x: 136x136px -->
-                      <source media="(max-width: 767px)"
-                        srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(max-width: 767px)"
-                        srcset="img/content/details/user-desk.png 1x, img/content/details/user-desk@2x.png 2x">
-
-                      <!-- 1x: 80x80px; 2x: 160x160px -->
-                      <source media="(min-width: 1200px)"
-                        srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x" type="image/webp">
-                      <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png" width="80" height="80"
-                        alt="Фото пользователя">
-                    </picture>
-                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                      обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-                    </p>
-                  </blockquote>
-                </li>
-              </ul>
-            </div>
+        <h2>Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__slider swiper-initialized swiper-horizontal swiper-pointer-events">
+            <ol class="swiper-wrapper reviews__list">
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__photo">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <picture>
+                    <source type="image/webp" srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x">
+                    <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png 2x" width="80" height="80" alt="Пользователь">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <h3>Анна Орлова</h3>
+                  <div class="reviews__content">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что&#160;в&#160;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&#160;вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__photo">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <picture>
+                    <source type="image/webp" srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x">
+                    <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png 2x" width="80" height="80" alt="Пользователь">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <h3>ЕАнна Орлова</h3>
+                  <div class="reviews__content">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что&#160;в&#160;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&#160;вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__photo">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <picture>
+                    <source type="image/webp" srcset="img/content/details/user-desk.webp 1x, img/content/details/user-desk@2x.webp 2x">
+                    <img src="img/content/details/user-desk.png" srcset="img/content/details/user-desk@2x.png 2x" width="80" height="80" alt="Пользователь">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <h3>Анна Орлова</h3>
+                  <div class="reviews__content">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что&#160;в&#160;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&#160;вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
           </div>
+          <button class="swiper-button-next reviews__btn-next" type="button" aria-label="Next slide" aria-disabled="false">
+            <svg width="16" height="32" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 1L0.999999 17L17 33" stroke="#afafaf"/>
+            </svg>
+          </button>
+          <button class="swiper-button-prev reviews__btn-prev" type="button" aria-label="Previous slide" aria-disabled="true">
+            <svg width="16" height="32" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 1L0.999999 17L17 33" stroke="#afafaf"/>
+            </svg>
+          </button>
         </div>
       </section>
       <!-- Feedback block -->
@@ -625,11 +615,15 @@
           <div class="container">
             <section class="feedback__free-session">
               <h2 class="feedback__title feedback__title--free-session">БЕСПЛАТНОЕ занятие</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-              <div class="feedback__input-wrapper">
-                <label><input type="text" name="name" placeholder="Имя" required></label>
-                <label><input class="masked" type="tel" name="tel" id="tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required></label>
-              </div>
+              <form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" autocomplete="off">
+                <div class="feedback__input-wrapper">
+                  <label class="visually-hidden" for="feedback-name">Введите ваше имя</label>
+                  <input type="text" name="name" id="feedback-name" placeholder="Имя" required>
+
+                  <label class="visually-hidden" for="feedback-tel">Введите номер телефона</label>
+                  <input type="tel" name="tel" id="feedback-tel" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}"
+                    minlength="10" placeholder="Телефон" required>
+                </div>
                 <button class="button feedback__button" type="submit">отправить</button>
               </form>
             </section>

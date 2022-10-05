@@ -80,6 +80,7 @@
   color: $color-defaultwhite;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: block;
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
@@ -125,7 +126,7 @@
   }
 
   @include vp-1199 {
-    margin-right: 0;
+    margin-right: auto;
     min-width: auto;
     margin-left: 90px;
 
@@ -243,7 +244,8 @@ h1 {
   }
 
   @include vp-1199 {
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
       width: 324px;
