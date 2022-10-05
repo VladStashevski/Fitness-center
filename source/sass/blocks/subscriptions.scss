@@ -75,7 +75,7 @@
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 46px;
-  margin: 0 auto 38px;
+  margin: 0 auto 26px;
   padding: 0;
   width: max-content;
   list-style: none;
@@ -157,6 +157,7 @@
 
   column-gap: 40px;
   list-style: none;
+  margin-top: 10px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
@@ -180,6 +181,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 2;
+  margin-top: 10px;
 
   &:hover,
   &:focus-within {
@@ -204,6 +206,7 @@
 
   @include vp-1199 {
     width: 442px;
+    margin-top: 0;
   }
 
   @include vp-767 {

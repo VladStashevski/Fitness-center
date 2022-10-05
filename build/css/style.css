@@ -2189,6 +2189,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
 }
 
 .page-header__topic {
@@ -2514,7 +2515,7 @@ h1 {
   -webkit-column-gap: 46px;
   -moz-column-gap: 46px;
   column-gap: 46px;
-  margin: 0 auto 38px;
+  margin: 0 auto 26px;
   padding: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2577,6 +2578,7 @@ h1 {
   -moz-column-gap: 40px;
   column-gap: 40px;
   list-style: none;
+  margin-top: 10px;
 }
 
 .subscriptions__cards li {
@@ -2598,6 +2600,7 @@ h1 {
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 2;
+  margin-top: 10px;
 }
 
 .subscriptions__cards li:hover,
@@ -3983,6 +3986,7 @@ a:focus {
 
   .subscriptions__cards li {
     width: 442px;
+    margin-top: 0;
   }
 
   .promo-event {
